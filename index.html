@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FootBall</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        h1{
+            width:1300px;height:700px;
+            background-image:url("ball.webp"),url("ranaldoo.webp"),url("bellingham.webp"),url("mbappe.webp"),url("oyinchisoqolli.webp"),url("oyinchi.webp"),url("messi.webp"),url("holland.webp"),url("abduqodir.webp"),url("abbos.webp"),url("neymar.webp"),url("rodrigo.webp"),url("maydon.webp");
+            background-size:30px 30px,60px 80px,60px 80px,60px 80px,60px 80px,60px 80px,60px 80px,60px 80px,60px 80px,60px 80px,60px 80px,60px 80px,1300px 700px;
+            background-repeat:no-repeat;
+            background-position:305px 105px,105px 405px,300px 50px,100px 80px,850px 100px,1000px 300px,850px 550px,400px 250px,550px 550px,50px 330px,450px 50px,1050px 520px,center center;
+            position:relative;
+            animation:game 8s linear forwards;
+        }
+        @keyframes game{
+            0%{
+                background-position:305px 105px,105px 405px,300px 50px,100px 80px,850px 100px,1000px 300px,850px 550px,400px 250px,550px 550px,50px 330px,450px 50px,1050px 520px,center center;
+            }
+            50%{
+                background-position:395px 505px,355px 485px,300px 50px,400px 350px,850px 100px,1000px 250px,850px 550px,550px 300px,550px 550px,50px 380px,500px 65px,1050px 520px,center center;
+            }
+            70%{
+                background-position:670px 340px,355px 485px,300px 50px,400px 350px,850px 100px,1000px 350px,900px 480px,650px 320px,550px 550px,50px 330px,600px 65px,1050px 520px,center center;
+            }
+            100%{
+                background-position:1250px 350px,355px 485px,300px 50px,400px 350px,850px 100px,1000px 300px,1000px 405px,650px 320px,550px 550px,50px 330px,600px 65px,1050px 520px,center center;
+            }
+        }
+        .goal{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%) scale(0.5);
+            font-size:120px;
+            color:gold;
+            font-weight:bold;
+            opacity:0;
+            text-shadow:0 0 20px yellow,0 0 40px orange,0 0 60px red;
+            animation:showGoal 2.5s ease-out forwards 8s;
+        }
+        @keyframes showGoal{
+            0%{
+                opacity:0;transform:translate(-50%,-50%) scale(0.3);
+            }
+            40%{
+                opacity:1;transform:translate(-50%,-50%) scale(1.4);
+            }
+            70%{
+                transform:translate(-50%,-50%) scale(1.1);
+            }
+            100%{
+                opacity:1;transform:translate(-50%,-50%) scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <div class="goal">Gooool!!!</div>
+    </h1>
+</body>
+</html>
